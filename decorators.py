@@ -24,6 +24,7 @@ def timer(func: Any) -> None:
 В качесте "подопытного" взята задача с LeetCode, которая мне компьютер уронила из-за слишком долгого выполнения, 
 при первой попытке решить ее.
 Само условие звучит следующим образом:
+
 169. Majority Element
 Given an array nums of size n, return the majority element.
 The majority element is the element that appears more than n / 2 times. 
