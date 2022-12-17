@@ -24,6 +24,8 @@
 class Engine2D:
 
     def __init__(self):
+        self.color = None
+        self.color_message = None
         self.canvas = []
 
     def add(self, obj):
@@ -31,8 +33,18 @@ class Engine2D:
 
     def draw(self):
         for obj in self.canvas:
-             obj.draw()
+            if self.color:
+                obj.draw(), print(self.color_message)
+            else:
+                obj.draw()
         self.canvas = []
+
+    def set_color(self, color=None):
+        self.color = color
+        if not self.color:
+            pass
+        else:
+            self.color_message = f'Color is {self.color}.'
 
 
 class Circle:
